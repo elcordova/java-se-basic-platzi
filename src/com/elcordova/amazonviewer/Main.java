@@ -101,13 +101,13 @@ public class Main {
     }
 
     public static void showSeries() {
-        int exit = 0;
+        int exit = 1;
         ArrayList<Serie> series = Serie.makeSeriesList();
         do {
             System.out.println();
             System.out.println(":: SERIES ::");
             for (int i = 0; i < series.size(); i++) {
-                System.out.println(""+i + 1 + ".- " + series.get(i).getTitle() + " Visto: " + series.get(i).isViewed());
+                System.out.println(""+(i + 1) + ".- " + series.get(i).getTitle() + " Visto: " + series.get(i).isViewed());
             }
             System.out.println("0.- back to menu\n");
             // read user input
@@ -124,15 +124,13 @@ public class Main {
     }
 
     public static void showChapters(ArrayList<Chapter> chapters) {
-        int exit = 0;
-        do {
             System.out.println();
             System.out.println(":: CHAPTERS ::");
             System.out.println();
             for (int i = 0; i < chapters.size(); i++) {
-                System.out.println(+i + 1 + ".- " + chapters.get(i).getTitle() + " Visto: " + chapters.get(i).isViewed());
+                System.out.println((i+1)+".- " + chapters.get(i).getTitle() + " Visto: " + chapters.get(i).isViewed());
             }
-            System.out.println("0.- back to menu\n");
+            System.out.println("0.- back to Series menu\n");
             // read user input
             Scanner sc = new Scanner(System.in);
             int response = Integer.valueOf(sc.nextLine());
@@ -151,10 +149,7 @@ public class Main {
             }
             //end movie see
             chapterSelected.stopToSee(startToSee, new Date());
-            System.out.println("viste la serie " + chapterSelected.getTitle() + " por: " + (chapterSelected.getTimeViewed() / 1000) + " segundos");
-
-
-        } while (exit != 0);
+            System.out.println("viste el capitulo " + chapterSelected.getTitle() + " por: " + (chapterSelected.getTimeViewed() / 1000) + " segundos");
 
     }
 
