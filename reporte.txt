@@ -1,0 +1,13 @@
+
+:: MOVIE ::
+ Title: Movie1
+ Genre: genre 1
+ Year: 2019
+ Creator: elcordova
+ Duration: 120
+:: MOVIE ::
+ Title: Movie 5
+ Genre: genero 5
+ Year: 2020
+ Creator: elcordova
+ Duration: 125

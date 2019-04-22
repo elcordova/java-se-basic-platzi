@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="oplall" level="project" />
+    <orderEntry type="library" name="MakeReport" level="project" />
   </component>
 </module>
